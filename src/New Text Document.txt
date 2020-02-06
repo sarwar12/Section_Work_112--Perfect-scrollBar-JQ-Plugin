@@ -1,0 +1,4 @@
+### Perfect scroll Bar jquery plugin:
+	https://github.com/mdbootstrap/perfect-scrollbar/tree/0.8.1
+	https://devhub.io/repos/noraesae-perfect-scrollbar
+	https://github.com/mdbootstrap/perfect-scrollbar

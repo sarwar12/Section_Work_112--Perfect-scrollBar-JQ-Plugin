@@ -1,0 +1,120 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: sans-serif;
+	position: relative;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:focus, input:focus, teaxarea:focus, button:focus{outline: 0 solid;}
+a:hover{
+	text-decoration: none;
+}
+.section-padding{padding: 80px 0;}
+/* Main CSS Stop */
+/* === Isotope Masonry Section CSS Start === */
+.portfolio-bg-1{background-image: url(../img/bg-1.jpg);}
+.portfolio-bg-2{background-image: url(../img/bg-2.jpg);}
+.portfolio-bg-3{background-image: url(../img/bg-3.jpg);}
+.portfolio-bg-4{background-image: url(../img/bg-4.jpg);}
+.portfolio-bg-5{background-image: url(../img/bg-5.jpg);}
+.portfolio-bg-6{background-image: url(../img/bg-6.jpg);}
+
+.portfolio-list {
+  overflow: hidden;
+}
+.single-portfolio-item {
+  float: left;
+  width: 33.3333%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+  position: relative;
+  z-index: 1;
+}
+.single-portfolio-item.large-bg {
+  height: 600px;
+}
+.portfolio-hover {
+  padding: 20px;
+  font-size: 12px;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+}
+.portfolio-hover h4 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.single-portfolio-item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: .3s;
+}
+.single-portfolio-item:after{
+	background: #ffffff;
+	background:linear-gradient(to bottom, #ffffff 0%,#000000 100%);
+}
+.single-portfolio-item:hover::after {
+  opacity: .7;
+}
+.single-portfolio-item:hover .portfolio-hover {
+  opacity: 1;
+  visibility: visible;
+  bottom: 0;
+}
+/* Isotope CSS*/
+.portfolio-filter {
+  margin: 20px 0 50px;
+  list-style: none;
+  text-align: center;
+  font-weight: 700;
+}
+.portfolio-filter li {
+  display: inline-block;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.portfolio-filter li.active{
+	color: orange;
+}
+.portfolio-filter li:after {
+  content: "/";
+  padding-left: 25px;
+  color: #000;
+  font-weight: normal;
+}
+.portfolio-filter li:last-child::after {
+  display: none;
+}
+	/* Perfect ScrollBar */
+.scrolled-another{
+	height: 400px;
+	position: relative;
+}
+.ps--theme_yellow-theme.ps > .ps__scrollbar-y-rail > .ps__scrollbar-y {
+  background: yellow;
+}
+/* === Isotope Masonry Section CSS Stop === */
